@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Sepal and Petal Measurements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Input Sepal and Petal Measurements</h2>
+    <form id="measurementForm"] action="{{url_for('predict_datapoint')}}" method="POST">
+        <label for="sepalLength">Sepal Length:</label>
+        <input type="text" id="sepalLength" placeholder="Enter sepal length...">
+        <label for="sepalWidth">Sepal Width:</label>
+        <input type="text" id="sepalWidth" placeholder="Enter sepal width...">
+        <label for="petalLength">Petal Length:</label>
+        <input type="text" id="petalLength" placeholder="Enter petal length...">
+        <label for="petalWidth">Petal Width:</label>
+        <input type="text" id="petalWidth" placeholder="Enter petal width...">
+        <input type="button" value="Submit">
+    </form>
+
+    <!-- <script>
+        function submitMeasurements() {
+            var sepalLength = document.getElementById('sepalLength').value;
+            var sepalWidth = document.getElementById('sepalWidth').value;
+            var petalLength = document.getElementById('petalLength').value;
+            var petalWidth = document.getElementById('petalWidth').value;
+
+            // You can perform further actions with these values, such as sending them to a server or processing them in some way
+            console.log("Sepal Length:", sepalLength);
+            console.log("Sepal Width:", sepalWidth);
+            console.log("Petal Length:", petalLength);
+            console.log("Petal Width:", petalWidth);
+            
+            // Here, you can perform additional actions like sending the data to a server or displaying it on the webpage
+        }
+    </script> -->
+</body>
+</html>

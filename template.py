@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-file_path_str = 'C:\Users\Krishna.Arjun\Desktop\Krish\iNeuron\Practice work\IrisClassification'
+file_path_str = 'C:/Users/Krishna.Arjun/Desktop/Krish/iNeuron/Practice work/IrisClassification'
 package_name = "IrisClassification"
 
 
